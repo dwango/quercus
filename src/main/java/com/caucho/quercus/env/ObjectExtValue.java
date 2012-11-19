@@ -1446,7 +1446,40 @@ public class ObjectExtValue extends ObjectValue
         for (Entry entry = _entries[hash]; entry != null; entry = entry._next) {
           StringValue entryKey = entry._key;
 
-          if ((name == entryKey || name.equals(entryKey)) && entry._value != NullValue.NULL ) {
+          if ((name == entryKey || name.equals(entryKey)) && !entry._value.eq(NullValue.NULL)) {
+            // php/09ks vs php/091m
+              return true;
+          }
+        }
+
+        if(this.isA("arrayaccess"))
+        {
+            // TODO: This should probably be in ArrayAccessDelegate
+            Env _env = Env.getCurrent();
+            Value v = this.getObject(_env).getArray().get(name);
+            if( v != null && v != NullValue.NULL && v != UnsetValue.UNSET)
+                return true;
+            return false;
+        }
+    }
+
+    return returnValue.toBoolean();
+
+  }
+
+  @Override
+  public boolean hasField( StringValue name) {
+
+    Value returnValue = _quercusClass.issetField(Env.getCurrent(),this,name);
+    if(returnValue == UnsetValue.UNSET)
+    {
+        // setter didn't work, lets look in the class itself
+        int hash = (name.hashCode() & 0x7fffffff) % _prime;
+
+        for (Entry entry = _entries[hash]; entry != null; entry = entry._next) {
+          StringValue entryKey = entry._key;
+
+          if ((name == entryKey || name.equals(entryKey))) {
             // php/09ks vs php/091m
               return true;
           }

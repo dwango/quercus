@@ -360,7 +360,7 @@ public class ClassesModule extends AbstractQuercusModule {
     else if (obj.isObject()) {
       cls = ((ObjectValue) obj.toValue()).getQuercusClass();
       
-      return obj.issetField(name) ? BooleanValue.TRUE : BooleanValue.FALSE;
+      return obj.hasField(name) ? BooleanValue.TRUE : BooleanValue.FALSE;
     }
     else {
       env.warning("must pass in object or name of class");

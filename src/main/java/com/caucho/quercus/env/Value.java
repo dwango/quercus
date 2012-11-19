@@ -2347,6 +2347,14 @@ abstract public class Value implements java.io.Serializable
   }
 
   /**
+   * Returns true if the field exists
+   */
+  public boolean hasField(StringValue name)
+  {
+    return false;
+  }
+
+  /**
    * Removes the field ref.
    */
   public void unsetField(StringValue name)

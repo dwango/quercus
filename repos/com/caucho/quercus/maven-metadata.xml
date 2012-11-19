@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.caucho</groupId>
+  <artifactId>quercus</artifactId>
+  <version>4.0.25</version>
+  <versioning>
+    <versions>
+      <version>4.0.25</version>
+    </versions>
+    <lastUpdated>20121119091508</lastUpdated>
+  </versioning>
+</metadata>

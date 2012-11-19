@@ -7,7 +7,7 @@ http://maven.apache.org/maven-v4_0_0.xsd">
 	<artifactId>quercus</artifactId>
 	<packaging>jar</packaging>
 	<version>4.0.25</version>
-	<name>projectname Maven Webapp</name>
+	<name>Quercus</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
 		<dependency>

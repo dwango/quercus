@@ -6,3 +6,6 @@
 *.ear
 
 target
+.project
+.classpath
+.DS_Store

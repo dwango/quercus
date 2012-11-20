@@ -19,7 +19,7 @@ targetディレクトリにquercus-VERSION.jarが生成されます。
     $ git push origin master
 
 # Mavenプロジェクトで利用する方法
-
+pom.xmlに以下のようにリポジトリとjarへの依存関係を追加する。
     <repositories>
         // ...
         <repository>
@@ -29,7 +29,6 @@ targetディレクトリにquercus-VERSION.jarが生成されます。
             <id>dwango-quercus-repos</id>
             <name>Dwango Quercus Repository</name>
             <url>https://raw.github.com/dwango/quercus/master/repos/</url>
-        //...
         </repository>
         //...
     </repositories>

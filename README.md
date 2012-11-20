@@ -21,12 +21,25 @@ targetディレクトリにquercus-VERSION.jarが生成されます。
 # Mavenプロジェクトで利用する方法
 
     <repositories>
-		<repository>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-			<id>dwango-quercus-repos</id>
-			<name>Dwango Quercus Repository</name>
-			<url>https://raw.github.com/dwango/quercus/master/repos/</url>
-		</repository>
-	</repositories>
+        // ...
+        <repository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>dwango-quercus-repos</id>
+            <name>Dwango Quercus Repository</name>
+            <url>https://raw.github.com/dwango/quercus/master/repos/</url>
+        //...
+        </repository>
+        //...
+    </repositories>
+    // ...
+    <dependencies>
+        // ...
+        <dependency>
+            <groupId>com.caucho</groupId>
+            <artifactId>quercus</artifactId>
+            <version>4.0.25</version>
+        </dependency>
+        // ...
+    </dependencies>

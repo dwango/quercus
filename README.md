@@ -1,14 +1,14 @@
 Quercus
 =======
-
-# ビルド環境
+# ビルド方法
+## ビルド環境
 - JDK6(JDK7ではビルドできません)
 - Mavn2以降
 
-# ビルド方法
+## ビルド方法
 ``$ mvn clean package``
 
-# デプロイ方法
+## デプロイ方法
 
     $ mvn clean deploy
     $ git add repos

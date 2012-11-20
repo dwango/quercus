@@ -1,4 +1,11 @@
 Manifest-Version: 1.0
 Ant-Version: Apache Ant 1.8.1
 Created-By: 1.6.0_24-b07 (Sun Microsystems Inc.)
+Implementation-Vendor: Caucho Technology, Inc.
+Implementation-Version: 4.0.25
+J2EE-DeploymentFactory-Implementation-Class: com.caucho.j2ee.deploycli
+ ent.DeploymentFactoryImpl
+Main-Class: com.caucho.boot.ResinBoot
+Class-Path: javaee-16.jar javaee-15.jar pro.jar license.jar hessian.ja
+ r quercus.jar resin-kernel.jar jcache-16.jar webservices-api.jar
 

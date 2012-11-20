@@ -20,6 +20,7 @@ targetディレクトリにquercus-VERSION.jarが生成されます。
 
 # Mavenプロジェクトで利用する方法
 pom.xmlに以下のようにリポジトリとjarへの依存関係を追加する。
+
     <repositories>
         // ...
         <repository>

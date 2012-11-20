@@ -23,6 +23,10 @@ targetディレクトリにquercus-VERSION.jarが生成されます。
     $ git commit repos -m '....'
     $ git push origin master
 
+# サンプルプロジェクト
+
+https://github.com/dwango/quercus-sample
+
 # Mavenプロジェクトで利用する方法
 pom.xmlに以下のようにリポジトリとjarへの依存関係を追加する。
 
